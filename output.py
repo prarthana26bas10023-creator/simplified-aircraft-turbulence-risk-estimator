@@ -1,0 +1,17 @@
+def display_results(data,atmosphere,flight,score,risk):
+
+    print("=======RESULTS=======")
+    print("Altitude                :",round(data["Altitude_2"],2),"m")
+    print("Atmospheric Temperature :",round(atmosphere["Atmospheric_Temperature"],2),"K")
+    print("Temperature Change      :",round(data["Temperature_Change"],2),"K")
+    print("Atmospheric Pressure    :",round(atmosphere["Atmospheric_Pressure"],2),"Pa")
+    print("Air Density             :",round(atmosphere["Air_Density"],2),"kg/m^3")   
+    print("Speed of Sound          :",round(atmosphere["Speed_of_Sound"],2),"m/s")
+    print("Aircraft Speed          :",round(data["Speed"],2),"m/s")
+    print("Mach Number             :",round(flight["Mach_Number"],3))
+    print("Flight Regime           :",flight["Flight_Regime"])
+    print("Wind Speed              :",round(data["Wind_Speed_2"],2),"m/s")
+    print("Wind Speed Change       :",round(data["Wind_Speed_Change"],2),"m/s")
+    print("Wind Shear              :",round(flight["Wind_Shear"],3),"s^-1")
+    print("Turbulence Score        :",score)
+    print("Estimated Risk          :",risk)
